@@ -89,8 +89,6 @@ When an oracle gets compromised, the hacker is in control of the outcome, rather
 
 ### Ecosystem Fit
 
-Anyone can borrow or lend using this protocol, but only FTY holders can buy liquidated NFTs at discounted prices. 
-
 Our team is interested in exploring mintbase because the platform removes several layers of complexities by abstracting technical implementations. This is especially very important to our use case. The major challenges of DeFi based applications are the significant hacks. By using a platform to create NFTs, write smart contracts, our team can focus more on the security of the application. We will use the Mintbase for primarily three reasons
 
 -  To mint our NFTs

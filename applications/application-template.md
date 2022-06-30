@@ -1,9 +1,4 @@
 # Mintbase Grant Proposal
-
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines. Blockquote sections starting with a `>` (such as this one) can be removed.
->
-> See the [Grants Program Process](https://github.com/Mintbase/Grants-Program/#pencil-process) on how to submit a proposal.
-
 - **Project Name:** Name of your project (e.g. DuoSwap Module)
 - **Team Name:** Legal name of your team (e.g. Duo)
 - **Payment Address:** A NEAR account to where funds can be transfered (e.g. myproject.near)
@@ -13,41 +8,93 @@
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful Mintbase grant), please provide name and/or pull request of said grant on the first line of this section.
-
 ### Overview
 
-Please provide the following:
+####  “Our mission is to democratize finance- by bringing non-fungible assets closer to the DeFi ecosystem”
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into the Mintbase / NEAR ecosystem.
-- An indication of why your team is interested in creating this project.
+The FTY, allows users to access instant liquidity by leveraging their non-fungible assets on NEAR blockchain. FTY users can access funds without impacting their credit scores, with flexible repayment options, as well as instant approval on the collateralized loans. The NFTs used as collateral must be approved by the FTYs Decentralized Autonomous Organizations (DAO). Despite highly volatile market conditions, FTY is an stable, unbiased NFT-backed borrowing protocol that offers fair and accessible finance to the masses. 
+
+#### FTY PROTOCOL
+
+Founded in 2022, FTY is a fully decentralized public lending & borrowing protocol built on near blockchain. It is a revenue sharing, community governed protocol which provides incentive and rewards to all participants. FTY accepts a wide range of NFT collections approved by FTY DAO as collateral in exchange for any whitelisted tokens. The components of the protocol include the lending smart contract, AI-driven NFT valuation engine and oracles. 
+
+
+#### FTY DAO
+
+DAO encompasses the FTY global community who manage and control various aspects of the protocol. We follow an effective governance operating model to provide unbiased,  transparent liquidity solutions to everyone. The DAO may influence the outcomes by leveraging their votes. DAO voting weight is directly proportional to the capital invested in the protocol. It means the greater the cap invested, a greater say in protocol’s decision-making. The primary responsibility of the DAO includes deciding on the whitelisted collections, tokens and the associated  risk parameters for each collection.
+
+#### Workflow of the protocol
+Lenders and borrowers interact by exchanging whitelisted NFTs for whitelisted tokens. Borrowers are obligated to repay their loans along with the interest in order to retrieve the collateralized NFT. If the borrower fails to do so, NFT enters the liquidation zone.
+
+#### WHY OUR TEAM IS INTERESTED IN CREATING THIS PROJECT?
+
+Our core team always had a passion for problem solving products. In 2022, we started iterating over ideas that could address the erosion of trust and inefficiencies in centralized financial systems using AI and blockchain. Our developers around the world started designing the user experience and implemented the first iterations of the code. 
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+####  CORE COMPONENTS OF FTY 
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+The FTY protocol is built on top of the NEAR chain and provides a highly transparent and scalable liquidity solution.
+
+#### NFT collaterals 
+Borrowers deposit their collateral assets into the FTY vaults on the protocol. A collateral asset is any NFT collection that FTY holders have approved into the protocol. NFT owners can collateralize their NFTs in exchange for whitelisted tokens. Collateralized assets must satisfy specific guideline requirements such as but not limited to having large trade volume, verified by leading marketplaces. Management of these risk parameters will also  be conducted by the DAO. 
+
+Whitelisted NFTs valuation comes from Oracle integrated with AI algorithms. The cornerstone of a lending protocol is accurate valuation of the NFTs. We leverage AI to dynamically decide the value of the NFT based on the floor price, time-weighted sales and other parameters. Our team of seasoned data scientists working in multidisciplinary environments harness the power of data and technology to provide  accurate AI driven NFT valuation. All the decisions of the protocol are made through an highly effective on-chain governance operating model. Our protocol involves DAO in the entire life cycle  of the asset selection process. The initial makeup consists of a temporary DAO formed by a community chosen by the FTY team. 
+
+#### FTY smart contracts
+All whitelisted NFTs can be leveraged to generate liquidity through our smart contracts. Users can access the protocol and create vaults through interfaces built by our developers and community. Vaults are non-custodial, giving users a high level of autonomy and self-sovereignty. Users need not rely on third parties to manage their assets or perform transactions.  Users have complete control over their locked collaterals until the health score of collateral doesn’t fall below the required threshold. 
+
+#### FTY participants
+FTY  incentivizes all the participants in the system.
+
+##### Borrowers
+FTY allows users to access core lending services and borrow money in a simple and optimal way. Users can borrow money from public pools by depositing whitelisted NFTs as collateral. They are required to pay interest on their loans. Interest rates depend on the utilization value of the NFT collection. This means, More a NFT collection is collateralized, higher the interest rate. Once liquidity is provided, borrowers are obligated to pay their loans along with the incurred interest, in order to withdraw their collateral. Each collateral deposited is allocated a separate vault. When users deposit multiple NFTs, they have multiple vaults with different NFT collections as collateral.
+
+##### Lenders
+Users can lend money in the form of whitelisted tokens. Lenders are incentivized APY for providing liquidity. 
+
+##### Liquidators
+Market participants who secure the protocol, by buying liquidated NFTs at discounted prices.
+
+#### Health score
+The health score is the numeric representation of the safety of your deposited assets against the borrowed assets and its underlying value. FTY Protocol ensures that there is enough collateral to cover all outstanding debts, by liquidating risky vault based on their health score.
+
+Health score is a cumulative of total viability score, number of collateralized assets held by the account, LTV ratio, outstanding loans held by the account and liquidation factors. To avoid liquidation scenarios, one must maintain a health score above 1 after the loan has been originated. If the user's health score reaches below 1, the positions are at the risk of liquidation. Each debt position has its own health score and  LTV which is determined by FTY DAO.
+
+##### Categorization of health scores
+Our health score is categorized into 3 zones: Good, Medium and Bad. Good health factor represents a safer place, far from liquidation. Medium health is when you start approaching liquidation, Bad is when your assets are in the position of being liquidated. Users can decrease or increase their health score by depositing more whitelisted NFTs or by repaying part of their loan. 
+
+#### AI driven NFT valuation
+AI acts as a collection tracking product. In a volatile market, offering NFT-collateralized loans is highly risky. This is because there is no reliable way to dynamically evaluate the worth of NFTs making it  highly impossible to operate an efficient lending protocol. 
+
+Due to this reason, our AI developers focused on utilizing machine learning, etc. to predict the price of the assets at a particular time. The AI engine predicts the value using various parameters like time weighted sales information, listing price, trends of the market, previous transfers, NFTs growth and popularity, etc. This score helps in estimating the borrow limit of the assets. 
+
+This approach enables scalability while handling exhaustive collections under one umbrella, becoming the cornerstone of our lending protocol.
+
+#### Liquidation
+If the health score of the borrowed loan becomes less than 1, the borrower gets liquidated. The liquidator can liquidate the borrower to retrieve part of the loan provided to the collateralized NFT. The liquidator collects the collateralized NFT and the penalty fees from the borrower. The FTY DAO sets the penalty fees for each NFT collection.
+
+To incentivize liquidation of risky vault, liquidators receive a discount on the NFTs they withdraw from the borrower’s. Anyone can borrow or lend using the protocol, but only FTY holders can act as liquidators. The discount rate is determined by the tier of FTY holders (Diamond, Platinum, Gold, Silver). Diamond members get the highest discount, followed by Platinum, Gold and Silver members.
+
+#### Volatility protection system 
+Volatility protection systems enable the protocol to take the borrowers outstanding obligation, in exceptional cases. This ensures profitability for liquidators. The protocol contains the proceeds from lending and borrowing (including liquidation penalties) and stability fees accrued from the vaults. 
+
+When the collateral’s value drops significantly in a short period, it is difficult for liquidators to earn profit from it. In these cases, the protocol assumes a portion of the outstanding debt to reduce the amount the liquidator has to repay. This makes the system resilient to market conditions. In other words, liquidations are independent of market behaviors.
+
+#### Oracle 
+Oracle integrated with our AI engine provides real-time information about market behavior of the collateral NFTs. They act as an on-chain APIs to safely query asset related information into our protocol. Decentralized oracles operate in the same way the blockchain networks operate, making it a reliable, trustless system to transfer off-chain data into our protocol. The FTY DAO chooses the trusted oracles that can interact with the protocol. 
+
+##### What if the oracle gets compromised?
+When an oracle gets compromised, the hacker is in control of the outcome, rather than the FTY. We handle this situation by delaying the decentralized oracle information by an hour, so our security team and FTY DAO can vote to freeze the oracle, if it is compromised. The security team actively resolves security issues and prevents damage to the protocol They have the authority to freeze compromised oracles.
 
 ### Ecosystem Fit
 
-Help us locate your project in the Mintbase landscape and what problems it tries to solve by answering each of these questions:
+Anyone can borrow or lend using this protocol, but only FTY holders can buy liquidated NFTs at discounted prices. 
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Mintbase / NEAR ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+Our team is interested in exploring mintbase because the platform removes several layers of complexities by abstracting technical implementations. This is especially very important to our use case. The major challenges of DeFi based applications are the significant hacks. By using a platform to create NFTs, write smart contracts, our team can focus more on the security of the application. We will use the Mintbase for primarily three reasons
+
+-  To mint our NFTs
+-  To use GraphQL to query the health score, to get previous liquidation threshold information, risk parameters associated with each NFT collection, to get results from it to understand the behavior of risky NFT collections and vaults. 
 
 ## Team :busts_in_silhouette:
 
@@ -101,21 +148,11 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Mintbase. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
 For each milestone,
 
-- make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-- include the amount of funding requested _per milestone_.
-- include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
 - provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-- commit to providing Dockerfiles for the delivery of your project.
-- indicate milestone duration as well as number of full-time employees working on each milestone.
-- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
 
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
+- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
 
 ### Overview
 
@@ -123,38 +160,89 @@ For each milestone,
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
-### Milestone 1 Example — Implement Mintbase Modules
+### Milestone 1 Example — LENDING PROTOCOL DEVNET BASE LAUNCH
 
 - **Estimated duration:** 1 month
-- **FTE:**  2
-- **Costs:** 8,000 USD
+- **FTE:**  4
+- **Costs:** 25,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Mintbase nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains to a user how anyone could utilize their NFTs as collateral to gain liquidity, and provide liquidity to earn APY.  |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We mention about how we handle the impact of volatile market situation, oracle hacks, secuity m,itigation systems  |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Mintbase module: X | We will create a Mintbase / NEAR module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Mintbase module: Y | We will create a Mintbase / NEAR module that will... |  
-| 3. | Mintbase module: Z | We will create a Mintbase / NEAR module that will... |  
-| 4. | NEAR chain integration | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 0e. | Article | We will publish a few medium article that explains how FTY is a transparent, scalable and permissionless system that connects lenders, borrowers and liquidators in a dynamic borrowing model.
+| 1. | Mintbase module: Public lending protocol encompasses the smart contract for lending and borrowing analytics  |  
+| 2. | Mintbase module: UI integration | We will create a module that will integrate with lending and borrowing protocol.
+| 3. | AI module: AI system design and development  | We will create a AI module that will acts as a collection tracking product.  We focus on utilizing machine learning, etc. to predict the price of the assets at a particular time. The AI engine predicts the value using various parameters like time weighted sales information, listing price, trends of the market, previous transfers, NFTs growth and popularity, etc. This score helps in estimating the borrow limit of the assets.  |  
+| 4. | Oracle module: Chainlink oracle integration | We will create a Oracle module that will be integrated with our AI engine and provides real-time information about market behavior of the collateral NFTs.|  
+| 5. | NEAR chain integration | Modules 1,2,3,4 of our custom chain will interact in such a way Borrowers deposit their collateral NFTs into the FTY vaults on the protocol. Collateralized assets must satisfy specific guideline requirements set by FTY DAO. Whitelisted NFTs valuation comes from Oracle integrated with AI algorithms. Health scores of whitelisted NFT is montiored regularly by the protocol. If it decrease below a certain threshold, it is liquidated. Lenders are incentivized APY for providing liquidity
+|  
 
-
-### Milestone 2 Example — Additional features
+### Milestone 2 NFT MINTING
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 4,000 USD
+- **FTE:**  2
+- **Costs:** 15,000 USD
 
-...
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains the minting and utility of our propreitary NFT  |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We mention about how we handle minting vulnerabilities |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a few medium article that explains how FTY tokenomics, coin mint for a dynamic borrowing model.
+| 1. | Tokenomics module: tokenmoics design | A balanced economic model of the FTY token that takes into account the interests of all participants(investors or lenders, borrowers, liquidators)  |  
+| 2. | Staking module: FTY staking program | Staking module leverage incentives and rewards to investors. The FTY holders get royalities, incentives, etc|
+| 3. | Discord module: Discord member verification bot for private channels | Our NFT holders get access to private discord channels where we post updates, weekly AMA calls, and access to real time sales and listing bots |  
+| 4. | Security module: Contract and Mint audit | We test the code against vulnerabilties including denial of service attacks, gas limit issues, reentrancy attacks, fake liquidation attacks, oracle compromise etc. We also provide bug bounties to incentive community to identify threats |  
+| 5. | NEAR NFT minting| Modules 1,2,3,4 of our custom chain will interact in such a way that we have a robust system that supports NFTs minting. We will use Mintbase to mint NFTs for the protocol
+|  
+
+### Milestone 2 NFT MINTING
+
+- **Estimated Duration:** 1 month
+- **FTE:**  4
+- **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains the minting and utility of our propreitary NFT  |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We mention about how we handle minting vulnerabilities |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a few medium article that explains how FTY tokenomics, coin mint for a dynamic borrowing model.
+| 1. | Tokenomics module: tokenmoics design | A balanced economic model of the FTY token that takes into account the interests of all participants(investors or lenders, borrowers, liquidators)  |  
+| 2. | Staking module: FTY staking program | Staking module leverage incentives and rewards to investors. The FTY holders get royalities, incentives, etc|
+| 3. | Discord module: Discord member verification bot for private channels | Our NFT holders get access to private discord channels where we post updates, weekly AMA calls, and access to real time sales and listing bots |  
+| 4. | Security module: Contract and Mint audit | We test the code against vulnerabilties including denial of service attacks, gas limit issues, reentrancy attacks, fake liquidation attacks, oracle compromise etc. We also provide bug bounties to incentive community to identify threats |  
+| 5. | NEAR NFT minting| Modules 1,2,3,4 of our custom chain will interact in such a way that we have a robust system that supports NFTs minting. We will use Mintbase to mint NFTs for the protocol
+|  
+
+### Milestone 2 MAINNET DEPLOYMENT OF THE LENDING PROTOCOL
+
+- **Estimated Duration:** 1 month
+- **FTE:**  4
+- **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the open source code of deployment of the lending protocol in the NEAR mainnet  |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a article that explaining the architecture and core technical components of the lending protocol.
+| 1. | Mintbase module: Mainnet deployment lending protocol| Full public lending launch on NEAR Mainnet, access for top tier collection holders.  |  
+| 2. | Governance module: DAO governance formation | temporary DAO is chosen by the team to implement an effective governance operating model to provide unbiased,  transparent liquidity solutions to everyone. |
+| 3. | Mobile wallets support module | To support mobile based wallet transactions and interactions with the protocol|  
+| 4. | Community building| Build a strong community that brings a long lasting value of our FTY NFTs|  
+
+
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+- Magnified Leverage of protocol - By integrating with broad range of wallets
+- Plans and systematic framework design for achieving XXm TVL milestone
 
 
 ## Additional Information :heavy_plus_sign:

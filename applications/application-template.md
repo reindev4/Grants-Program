@@ -197,27 +197,8 @@ For each milestone,
 | 2. | Staking module: FTY staking program | Staking module leverage incentives and rewards to investors. The FTY holders get royalities, incentives, etc|
 | 3. | Discord module: Discord member verification bot for private channels | Our NFT holders get access to private discord channels where we post updates, weekly AMA calls, and access to real time sales and listing bots |  
 | 4. | Security module: Contract and Mint audit | We test the code against vulnerabilties including denial of service attacks, gas limit issues, reentrancy attacks, fake liquidation attacks, oracle compromise etc. We also provide bug bounties to incentive community to identify threats |  
-| 5. | NEAR NFT minting| Modules 1,2,3,4 of our custom chain will interact in such a way that we have a robust system that supports NFTs minting. We will use Mintbase to mint NFTs for the protocol
-|  
-
-### Milestone 2 NFT MINTING
-
-- **Estimated Duration:** 1 month
-- **FTE:**  4
-- **Costs:** 10,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains the minting and utility of our propreitary NFT  |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We mention about how we handle minting vulnerabilities |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish a few medium article that explains how FTY tokenomics, coin mint for a dynamic borrowing model.
-| 1. | Tokenomics module: tokenmoics design | A balanced economic model of the FTY token that takes into account the interests of all participants(investors or lenders, borrowers, liquidators)  |  
-| 2. | Staking module: FTY staking program | Staking module leverage incentives and rewards to investors. The FTY holders get royalities, incentives, etc|
-| 3. | Discord module: Discord member verification bot for private channels | Our NFT holders get access to private discord channels where we post updates, weekly AMA calls, and access to real time sales and listing bots |  
-| 4. | Security module: Contract and Mint audit | We test the code against vulnerabilties including denial of service attacks, gas limit issues, reentrancy attacks, fake liquidation attacks, oracle compromise etc. We also provide bug bounties to incentive community to identify threats |  
-| 5. | NEAR NFT minting| Modules 1,2,3,4 of our custom chain will interact in such a way that we have a robust system that supports NFTs minting. We will use Mintbase to mint NFTs for the protocol
+| 5. | Community building| Build a strong community that brings a long lasting value of our FTY NFTs|  
+| 6. | Mintbase module: NEAR NFT minting| Modules 1,2,3,4,5 of our custom chain will interact in such a way that we have a robust system that supports NFTs minting. We will use Mintbase to mint NFTs for the protocol
 |  
 
 ### Milestone 2 MAINNET DEPLOYMENT OF THE LENDING PROTOCOL
@@ -236,12 +217,11 @@ For each milestone,
 | 1. | Mintbase module: Mainnet deployment lending protocol| Full public lending launch on NEAR Mainnet, access for top tier collection holders.  |  
 | 2. | Governance module: DAO governance formation | temporary DAO is chosen by the team to implement an effective governance operating model to provide unbiased,  transparent liquidity solutions to everyone. |
 | 3. | Mobile wallets support module | To support mobile based wallet transactions and interactions with the protocol|  
-| 4. | Community building| Build a strong community that brings a long lasting value of our FTY NFTs|  
 
 
 ## Future Plans
 
-- Magnified Leverage of protocol - By integrating with broad range of wallets
+- Magnified Leverage of protocol - By integrating with broad range of wallets and NEAR marketplaces
 - Plans and systematic framework design for achieving XXm TVL milestone
 
 
